@@ -1,2 +1,6 @@
-<h1>Doses#new</h1>
-<p>Find me in app/views/doses/new.html.erb</p>
+<h1>Add an dose to <%= @cocktail.name %></h1>
+
+<%= render 'form', dose: @dose %>
+
+<%= link_to 'Back to ', cocktail_path(@cocktail) %>
+

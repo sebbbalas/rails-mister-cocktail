@@ -1,6 +1,13 @@
 <h1>All our Cocktails</h1>
 
-<% @cocktails.each do |cocktail| %>
-  <%= render "cocktail", cocktail: cocktail %>
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-md-3">
+        <%= render "cocktail", cocktail: cocktail %>
+      </div>
+    <% end%>
+  </div>
+</div>
 
-<% end%>
+
